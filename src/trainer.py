@@ -40,7 +40,6 @@ class Trainer(BaseTrainer):
                 self.scaler = None
 
     def train(self):
-        torch.set_anomaly_enabled(True)
         args = self.args
         self._log_arguments()
         self._logger.info(f'Model: {args.model_name}')
