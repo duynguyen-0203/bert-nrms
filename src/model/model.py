@@ -17,7 +17,7 @@ class NRMS(nn.Module):
     def forward(self, title: Tensor, title_mask: Tensor, his_title: Tensor, his_title_mask: Tensor,
                 his_mask: Tensor, sapo: Union[Tensor, None] = None, sapo_mask: Union[Tensor, None] = None,
                 his_sapo: Union[Tensor, None] = None, his_sapo_mask: Union[Tensor, None] = None,
-                category: Union[Tensor, None] = None, his_category: Union[Tensor, None] = None, ):
+                category: Union[Tensor, None] = None, his_category: Union[Tensor, None] = None):
         r"""
         Forward propagation
 
